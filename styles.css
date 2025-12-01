@@ -1,0 +1,106 @@
+/* Import a modern, professional font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Global Reset and Base Styles */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #E0E0E0; /* Light gray text for dark background */
+    background-color: #121212; /* Deep dark background */
+}
+
+/* Main Layout */
+.main-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Container (The App Box) */
+.card-container {
+    background-color: #1F1F1F; /* Slightly lighter dark shade for the card */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 2.5rem;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Header Section */
+.header-section {
+    margin-bottom: 2rem;
+}
+
+.header-section h1 {
+    font-weight: 700;
+    color: #4CAF50; /* A pop of professional color (e.g., green/cyan) */
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-weight: 300;
+    color: #A0A0A0;
+    font-size: 0.95rem;
+}
+
+/* Interaction and Input/Output Section */
+.input-output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text Area */
+.text-input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: #2C2C2C; /* Darker input background */
+    color: #E0E0E0;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    resize: none; /* Prevent manual resizing */
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.text-input:focus-visible {
+    outline: none;
+    border-color: #4CAF50; /* Highlight border on focus */
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+}
+
+/* Error Message */
+.error-message {
+    color: #FF5252; /* Bright red for errors */
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* Button */
+.action-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-image: linear-gradient(90deg, #4CAF50, #8BC34A); /* Subtle green gradient */
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: background-image 0.3s, transform 0.1s, box-shadow 0.3s;
+}
+
+.action-button:hover {
+    background-image: linear-gradient(90deg, #45A049, #7CB342); /* Slightly darker on hover */
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
+.action-button:active {
+    transform: translateY(1px);
+}
